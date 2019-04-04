@@ -1,14 +1,31 @@
 // Navigation Styles here
 
-nav {
-  a {
-    margin: 20px;
-    .fonts();
-    text-decoration: none;
+header {
+  .navigation();
+  h1 {
+    color: @white;
+    margin-left: 20px;
   }
-}
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
 
-h1 {
-  color: @white;
-  margin-left: 20px;
+  nav {
+    .navigation();
+    a {
+      margin: 20px;
+      .fonts();
+      text-decoration: none;
+    } // a tag
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    } //media tag
+  } //nav
+} //header
+
+.fun-bus {
+  padding: 15px;
 }

@@ -1,78 +1,97 @@
 .home {
-  header {
-    .navigation();
-    .fonts();
-    background: @purple;
-  }
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
+      @media @mobile {
+        width: 100%;
+        padding: 20px;
       }
     }
   }
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+  .img-content {
+    width: 48%;
+    padding-left: 1%;
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+    @media @mobile {
+      width: 100%;
     }
   }
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+  img {
+    border-radius: 10px;
+  }
+}
 
-    img {
-      border-radius: 10px;
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+
+    @media @mobile {
+      width: 100%;
+      margin-top: 15px;
     }
   }
 
-  .btn {
-    .custom-btn(
-      @width: 200px,
-      @bgColor: #8447fe,
-      @font-color: #ffffff,
-      @radius: 15px,
-      @height: 45px
-    );
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
   }
+}
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+.content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.btn {
+  .custom-btn(
+    @width: 100%,
+    @bgColor: #8447fe,
+    @font-color: #ffffff,
+    @radius: 15px,
+    @height: 45px
+  );
+}
+
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+  }
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+
+    @media @mobile {
+      width: 100%;
     }
   }
 } // home
-
-.btn {
-  color: green;
-}
