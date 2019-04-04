@@ -168,16 +168,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav a {
+  margin: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+h1 {
+  color: #ffffff;
+  margin-left: 20px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  background: #8447fe;
 }
 .home .content-section {
   margin: 30px 0;
@@ -198,7 +220,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -215,13 +237,28 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+.home .btn {
+  background-color: #8447fe;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 15px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.btn {
+  color: green;
 }
